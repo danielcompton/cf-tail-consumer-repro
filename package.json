@@ -1,0 +1,14 @@
+{
+  "name": "multiplayer-js",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "dev-bad": "npx wrangler@4.32.0 dev",
+    "dev-good": "npx wrangler@4.31.0 dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.32.0"
+  }
+}
