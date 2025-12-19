@@ -2,6 +2,8 @@
 
 Minimal Cloudflare Workers Durable Object WebSocket reproduction case for debugging a performance regression between Wrangler 4.31.0 and 4.32.0. From bisecting between these two tags, it looks like this was introduced in [d3040550](https://github.com/cloudflare/workers-sdk/commit/d3040550adaad031f24327fbfbe9fecdeface0b5).
 
+https://github.com/user-attachments/assets/339eae5e-2216-4f7b-b607-2f2b3274826e
+
 ## Fixing it
 
 If you remove `tail_consumers` with the nonexistent `missing-consumer-xyz` from the `wrangler.toml`, the issue disappears.
